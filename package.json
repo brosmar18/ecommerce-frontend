@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/client": "^6.1.2",
+    "@sanity/image-url": "^1.0.2",
+    "@stripe/stripe-js": "^1.54.0",
+    "canvas-confetti": "^1.6.0",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.5",
     "next": "13.4.5",
