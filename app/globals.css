@@ -67,6 +67,18 @@ a {
   z-index: 1000 !important;
 }
 
+.hero-banner__desc {
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+  width: 300px;
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  color: #324d67;
+}
+
+
 .products-heading {
   text-align: center;
   margin: 40px 0;
