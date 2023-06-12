@@ -5,18 +5,19 @@ import Link from 'next/link';
 
 const HeroBanner = () => {
     return (
-        <div className='hero-banner-container'>
+        <div className='hero-banner'>
             <div>
-                <p className='beats-solo'>Small Text</p>
-                <h3>Mid Text</h3>
-                <Image src='' alt='headphones' className='hero-banner-image' />
+                <p className='hero-banner__s-text'>Small Text</p>
+                <h3 className='hero-banner__m-text'>Mid Text</h3>
+                <h1 className='hero-banner__l-text'>Large Text</h1>
+                <Image src='' alt='headphones' className='hero-banner__image' />
             </div>
             <Link href="#">
-                <button type='button'>Button Text</button>
+                <button type='button' className='hero-banner__button'>Button Text</button>
             </Link>
-            <div className='desc'>
-                <h5>Description</h5>
-                <p>Description text</p>
+            <div className='hero-banner__desc'>
+                <h5 className='hero-banner__desc-title'>Description</h5>
+                <p className='hero-banner__desc-text'>Description text</p>
             </div>
         </div>
     );
