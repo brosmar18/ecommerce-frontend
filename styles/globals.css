@@ -17,6 +17,16 @@ a {
   text-decoration: none;
 }
 
+.products-heading {
+  text-align: center;
+  margin: 40px 0;
+  color: #324d67;
+}
+
+.products-heading__title {
+  
+}
+
 .hero-banner {
   padding: 100px 40px;
   background-color: #dcdcdc;
