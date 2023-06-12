@@ -28,6 +28,11 @@ a {
   font-weight: 800;
 }
 
+.products-heading__desc {
+  font-size: 16px;
+  font-weight: 200;
+}
+
 .hero-banner {
   padding: 100px 40px;
   background-color: #dcdcdc;
