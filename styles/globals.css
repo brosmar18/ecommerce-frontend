@@ -96,4 +96,8 @@ a {
     padding: 50px 20px;
     height: 400px;
   }
+
+  .hero-banner__m-text {
+    font-size: 2rem;
+  }
 }
