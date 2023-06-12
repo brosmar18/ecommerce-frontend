@@ -32,4 +32,7 @@ a {
   font-size: 20px;
 }
 
-
+.hero-banner__m-text {
+  font-size: 4rem;
+  margin-top: 4px;
+}
