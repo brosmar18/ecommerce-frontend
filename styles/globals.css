@@ -33,13 +33,13 @@ a {
 }
 
 .hero-banner__m-text {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-top: 4px;
 }
 
 .hero-banner__l-text {
   color: white;
-  font-size: 10em;
+  font-size: 10rem;
   margin-left: -20px;
   text-transform: uppercase;
 }
@@ -47,7 +47,7 @@ a {
 .hero-banner__image {
   position: absolute;
   top: 0%;
-  right:20%;
+  right:10%;
   width: 450px;
   height: 450px;
 }
