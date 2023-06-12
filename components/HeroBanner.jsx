@@ -14,6 +14,10 @@ const HeroBanner = () => {
             <Link href="#">
                 <button type='button' className='hero-banner__button'>Button Text</button>
             </Link>
+            <div className='hero-banner__desc'>
+                <h5 className='hero-banner__desc-title'>Description</h5>
+                <p className='hero-banner__desc-text'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
         </div>
     )
 }
