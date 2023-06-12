@@ -12,7 +12,7 @@ const HeroBanner = () => {
                 <Image src='' alt='headphones' className='hero-banner__image' />
             </div>
             <Link href="#">
-                <button type='hero-banner__button'>Button Text</button>
+                <button type='button' className='hero-banner__button'>Button Text</button>
             </Link>
             <div className='hero-banner__desc'>
                 <h5>Description</h5>

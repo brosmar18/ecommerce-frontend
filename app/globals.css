@@ -17,11 +17,6 @@ a {
   text-decoration: none;
 }
 
-.products-heading {
-  text-align: center;
-  margin: 40px 0;
-  color: #324d67;
-}
 
 .hero-banner {
   padding: 100px 40px;
@@ -31,8 +26,28 @@ a {
   height: 500px;
   line-height: 0.9;
   width: 100%;
+  font-size: 20px;
 }
 
-.hero-banner-container .beats-solo{
+.hero-banner__small-text {
   font-size: 20px;
+}
+
+.hero-banner__button {
+  border-radius: 15px;
+  padding: 10px 16px;
+  background-color: #f02d34;
+  color: white;
+  border: none;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 1000 !important;
+}
+
+.products-heading {
+  text-align: center;
+  margin: 40px 0;
+  color: #324d67;
 }
