@@ -23,7 +23,7 @@ a {
   color: #324d67;
 }
 
-.hero-banner-container {
+.hero-banner {
   padding: 100px 40px;
   background-color: #dcdcdc;
   border-radius: 15px;
@@ -31,4 +31,8 @@ a {
   height: 500px;
   line-height: 0.9;
   width: 100%;
+}
+
+.hero-banner-container .beats-solo{
+  font-size: 20px;
 }
