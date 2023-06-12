@@ -22,3 +22,13 @@ a {
   margin: 40px 0;
   color: #324d67;
 }
+
+.hero-banner-container {
+  padding: 100px 40px;
+  background-color: #dcdcdc;
+  border-radius: 15px;
+  position: relative;
+  height: 500px;
+  line-height: 0.9;
+  width: 100%;
+}
