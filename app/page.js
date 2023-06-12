@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { Product, FooterBanner, HeroBanner } from '../components';
 
-const home = () => {
+const Home = () => {
+  const [products, setProducts] = useState([]);
+
+
+  useEffect(() => {
+    const query = '*[_type == "product"]';
+
+    client.fetch(query).then((data) => {
+      setProducts(data);
+    })
+  })
+
   return (
     <>
       <HeroBanner />
@@ -21,4 +32,4 @@ const home = () => {
   )
 }
 
-export default home;
+export default Home;
