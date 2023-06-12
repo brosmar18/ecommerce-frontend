@@ -14,6 +14,10 @@ const HeroBanner = () => {
             <Link href="#">
                 <button type='button'>Button Text</button>
             </Link>
+            <div className='desc'>
+                <h5>Description</h5>
+                <p>Description text</p>
+            </div>
         </div>
     );
 };
