@@ -100,4 +100,8 @@ a {
   .hero-banner__m-text {
     font-size: 2rem;
   }
+
+  .hero-banner__l-text {
+    font-size: 6rem;
+  }
 }
