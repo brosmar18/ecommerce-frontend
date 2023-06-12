@@ -12,7 +12,7 @@ const Home = ({ products, bannerData }) => (
       </div>
 
       <div className="products-container">
-        Products Container
+        Products 
       </div>
 
       <FooterBanner />
