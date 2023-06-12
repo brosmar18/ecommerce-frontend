@@ -8,6 +8,7 @@ const HeroBanner = () => {
         <div className='hero-banner'>
             <div>
                 <p className='hero-banner__s-text'>Small Text</p>
+                <h3 className='hero-banner__m-text'>Med Text</h3>
             </div>
         </div>
     )
