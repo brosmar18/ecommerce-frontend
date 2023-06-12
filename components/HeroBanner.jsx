@@ -7,8 +7,9 @@ const HeroBanner = () => {
     return (
         <div className='hero-banner'>
             <div>
-                <p className='hero-banner__small-text'>Small Text</p>
-                <h3 className='hero-banner__med-text'>Mid Text</h3>
+                <p className='hero-banner__s-text'>Small Text</p>
+                <h3 className='hero-banner__m-text'>Mid Text</h3>
+                <h1 className='hero-banner__l-text'>Large Text</h1>
                 <Image src='' alt='headphones' className='hero-banner__image' />
             </div>
             <Link href="#">
