@@ -78,6 +78,13 @@ a {
   color: #324d67;
 }
 
+.hero-banner__desc-title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  align-self: flex-end;
+}
+
 
 .products-heading {
   text-align: center;
