@@ -3,16 +3,19 @@ import React from 'react';
 import client from '../library/client';
 import { Product, FooterBanner, HeroBanner } from '../components';
 
+import urlFor  from '../library/client';
+
 const Home = ({ products, bannerData }) => (
     <div>
       <HeroBanner />
       <div className="products-heading">
         <h2 className="products-heading__title">Best Seller Products</h2>
         <p className="products-heading__desc">Description of products or selling statement</p>
+        <img src={urlFor(heroBanner.image)} alt='headphones' className='products-heading__image' />
       </div>
 
       <div className="products-container">
-        Products 
+        Products
       </div>
 
       <FooterBanner />
