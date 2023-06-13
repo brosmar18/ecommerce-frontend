@@ -5,6 +5,9 @@ const Footer = () => {
     return (
         <div className='footer'>
             <p>&copy; 2023 Furry Pal News All rights reserved</p>
+            <p className='footer__icons'>
+                <AiFillInstagram />
+            </p>
         </div>
     )
 }
