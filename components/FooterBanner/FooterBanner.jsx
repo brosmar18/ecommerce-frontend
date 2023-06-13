@@ -21,7 +21,7 @@ const FooterBanner = ({ footerBanner }) => {
                     <p>Description</p>
                 </div>
                 <Link href="#">
-                    <button type='button'>Button Text</button>
+                    <button className={styles['footer-banner__button']} type='button'>Button Text</button>
                 </Link>
                 <img
                     src='#'

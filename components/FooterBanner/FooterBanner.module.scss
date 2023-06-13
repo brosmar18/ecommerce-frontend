@@ -13,4 +13,16 @@
         display: flex;
         justify-content: space-between;
     }
+
+    .footer-banner__button {
+        border-radius: 15px;
+        padding: 10px 16px;
+        background-color: white;
+        color: red;
+        border: none;
+        margin-top: 40px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+    }
 }
