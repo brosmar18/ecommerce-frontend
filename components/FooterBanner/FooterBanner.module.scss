@@ -21,8 +21,34 @@
         color: red;
         border: none;
         margin-top: 40px;
-        font-size: 18px;
+        font-size: 1.2rem;
         font-weight: 500;
         cursor: pointer;
+    }
+}
+
+.footer-banner__left {
+    h3 {
+        font-weight: 900;
+        font-size: 6rem;
+        margin-left: 25px;
+    }
+
+    p {
+        margin: 18px;
+        font-size: 1.2rem;
+    }
+}
+
+.footer-banner__right {
+    line-height: 1.4;
+
+    h3 {
+        font-weight: 800;
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1.2rem;
     }
 }
