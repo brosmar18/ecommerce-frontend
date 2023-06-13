@@ -124,4 +124,6 @@ a {
   transition: transform 0.5s ease;
 }
 
-
+.product__name {
+  font-weight: 500;
+}
