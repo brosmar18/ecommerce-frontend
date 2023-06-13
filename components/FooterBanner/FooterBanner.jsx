@@ -5,7 +5,7 @@ import styles from './FooterBanner.module.scss';
 import { urlFor } from '../../library/client';
 
 
-const FooterBanner = ({ footerBanner }) => {
+const FooterBanner = ({ footerBanner: { discount, largeText1, largeText2, saleTime, smallText, midText, desc, product, buttonText, image } }) => {
     return (
         <div className={styles['footer-banner']}>
             <div className={styles['footer-banner__desc']}>
