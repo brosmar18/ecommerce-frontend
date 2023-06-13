@@ -23,6 +23,9 @@ const FooterBanner = ({ footerBanner }) => {
                 <Link href="#">
                     <button type='button'>Button Text</button>
                 </Link>
+                <img
+                    src='#'
+                />
             </div>
         </div>
     )
