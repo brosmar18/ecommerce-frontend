@@ -13,6 +13,9 @@ const Layout = () => {
             <header>
                 <NavBar />
             </header>
+            <main className='main'>
+
+            </main>
         </div>
     )
 }
