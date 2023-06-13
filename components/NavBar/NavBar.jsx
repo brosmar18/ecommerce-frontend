@@ -9,6 +9,9 @@ const NavBar = () => {
             <p className='nav__logo'>
                 <Link href="/">Furry Pal News</Link>
             </p>
+            <button type='button' className='nav__cart-icon'>
+                <AiOutlineShopping />
+            </button>
         </div>
     )
 }
