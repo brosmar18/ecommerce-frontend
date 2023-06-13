@@ -7,14 +7,14 @@ import styles from './Layout.module.scss';
 
 const Layout = ({ children }) => {
     return (
-        <div className='layout'>
+        <div className={styles['layout']}>
             <Head>
                 <title>Furry Pal News Store</title>
             </Head>
             <header>
                 <NavBar />
             </header>
-            <main className='main'>
+            <main className={styles['main']}>
                 {children}
             </main>
             <Footer>
