@@ -3,6 +3,7 @@ import Head from 'next/head';
 
 import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
+import styles from './Layout.module.scss';
 
 const Layout = ({ children }) => {
     return (
