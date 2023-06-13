@@ -1,0 +1,60 @@
+.footer-banner {
+    padding: 100px 40px;
+    background-color: #f02d34;
+    border-radius: 15px;
+    position: relative;
+    height: 400px;
+    line-height: 1;
+    color: white;
+    width: 100%;
+    margin-top: 120px;
+
+    .footer-banner__desc {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-banner__button {
+        border-radius: 15px;
+        padding: 10px 16px;
+        background-color: white;
+        color: red;
+        border: none;
+        margin-top: 40px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}
+
+.footer-banner__left {
+    h3 {
+        font-weight: 900;
+        font-size: 6rem;
+        margin-left: 25px;
+    }
+
+    p {
+        margin: 18px;
+        font-size: 1.2rem;
+    }
+}
+
+.footer-banner__right {
+    line-height: 1.4;
+
+    h3 {
+        font-weight: 800;
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.footer-banner__image {
+    position: absolute;
+    top: -25%;
+    left: 25%;
+}
