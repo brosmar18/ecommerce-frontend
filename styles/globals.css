@@ -127,3 +127,9 @@ a {
 .product__name {
   font-weight: 500;
 }
+
+.product__price {
+  font-weight: 800;
+  margin-top: 6px;
+  color: black;
+}
