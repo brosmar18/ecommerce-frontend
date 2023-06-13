@@ -10,7 +10,7 @@ const ProductDetails = ({ products, product }) => {
             <div className='product-details'>
                 <div>
                     <div className='product-details__image'>
-                        <img src='#' />
+                        <img src={urlFor(image && image[0])} />
                     </div>
                 </div>
             </div>
