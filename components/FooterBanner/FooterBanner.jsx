@@ -20,6 +20,9 @@ const FooterBanner = ({ footerBanner }) => {
                     <h3>Mid Text</h3>
                     <p>Description</p>
                 </div>
+                <Link href="#">
+                    <button type='button'>Button Text</button>
+                </Link>
             </div>
         </div>
     )
