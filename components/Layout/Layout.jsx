@@ -6,8 +6,13 @@ import Footer from '../Footer/Footer';
 
 const Layout = () => {
     return (
-        <div>
-            Layout
+        <div className='layout'>
+            <Head>
+                <title>Furry Pal News Store</title>
+            </Head>
+            <header>
+                <NavBar />
+            </header>
         </div>
     )
 }
