@@ -5,26 +5,26 @@ import styles from './FooterBanner.module.scss';
 import { urlFor } from '../../library/client';
 
 
-const FooterBanner = ({ footerBanner }) => {
+const FooterBanner = ({ footerBanner: { discount, largeText1, largeText2, saleTime, smallText, midText, desc, product, buttonText, image } }) => {
     return (
         <div className={styles['footer-banner']}>
             <div className={styles['footer-banner__desc']}>
                 <div className={styles['footer-banner__left']}>
-                    <p>Discount</p>
-                    <h3>Large Text 1</h3>
-                    <h3>Large Text 2</h3>
-                    <p>Sale Time</p>
+                    <p>{discount}</p>
+                    <h3>{largeText1}</h3>
+                    <h3>{largeText2}</h3>
+                    <p>{saleTime}</p>
                 </div>
                 <div className={styles['footer-banner__right']}>
-                    <p>Small Text</p>
-                    <h3>Mid Text</h3>
-                    <p>Description</p>
+                    <p>{smallText}</p>
+                    <h3>{midText}</h3>
+                    <p>{desc}</p>
                 </div>
                 <Link href="#">
-                    <button className={styles['footer-banner__button']} type='button'>Button Text</button>
+                    <button className={styles['footer-banner__button']} type='button'>{buttonText}</button>
                 </Link>
                 <img
-                    src='#'
+                    src={urlFor(image)}
                     className={styles['.footer-banner__image']}
                 />
             </div>
