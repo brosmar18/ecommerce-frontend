@@ -4,9 +4,9 @@ import { urlFor } from '../../library/client';
 
 import styles from './Product.module.scss';
 
-const Product = ({ product: {image, name, slug, price }}) => {
+const Product = ({ products }) => {
     return (
-        <div>
+        <div className='products-container'>
             <Link href={`/product/${slug.current}`}>
                 <div className='product'>
                     <img
