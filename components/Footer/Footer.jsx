@@ -7,6 +7,7 @@ const Footer = () => {
             <p>&copy; 2023 Furry Pal News All rights reserved</p>
             <p className='footer__icons'>
                 <AiFillInstagram />
+                <AiOutlineTwitter />
             </p>
         </div>
     )
