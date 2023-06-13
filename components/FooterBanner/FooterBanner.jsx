@@ -12,7 +12,7 @@ const FooterBanner = ({ footerBanner: { discount, largeText1, largeText2, saleTi
                 <div className={styles['footer-banner__left']}>
                     <p>{discount}</p>
                     <h3>{largeText1}</h3>
-                    <h3>Large Text 2</h3>
+                    <h3>{largeText2}</h3>
                     <p>Sale Time</p>
                 </div>
                 <div className={styles['footer-banner__right']}>
