@@ -25,6 +25,7 @@ const FooterBanner = ({ footerBanner }) => {
                 </Link>
                 <img
                     src='#'
+                    className={styles['.footer-banner__image']}
                 />
             </div>
         </div>
