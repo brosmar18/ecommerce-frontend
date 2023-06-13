@@ -18,4 +18,8 @@
     transition: transform .4s ease;
     border: none;
     background-color: transparent;
+
+    &:hover {
+        transform: scale(1.1, 1.1);
+    }
 }
