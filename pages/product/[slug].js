@@ -2,6 +2,8 @@ import React from 'react';
 
 
 const ProductDetails = ({ products, product }) => {
+    const { image, name, details, price } = product;
+
     return (
         <div>
             <div className='product-details'>
