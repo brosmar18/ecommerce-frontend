@@ -2,13 +2,15 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import styles from './HeroBanner.module.scss';
+
 import { urlFor } from '../../library/client';
 
 
 
 const HeroBanner = ({ heroBanner }) => {
     return (
-        <div className='hero-banner'>
+        <div className={styles['hero-banner']}>
             <div>
                 <p className='hero-banner__s-text'>{heroBanner.smallText}</p>
                 <h3 className='hero-banner__m-text'>{heroBanner.midText}</h3>
