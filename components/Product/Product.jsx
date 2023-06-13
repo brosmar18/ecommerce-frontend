@@ -6,20 +6,20 @@ import styles from './Product.module.scss';
 
 const Product = ({ products }) => {
     return (
-        <div className='products-container'>
-            <Link href={`/product/${slug.current}`}>
+       <div className='products-container'>
+        {products?.map(({image, name, slug, price, _id}) => (
+            <Link key={_id} href={`/product/${slug.current}`}>
                 <div className='product'>
                     <img
                         src={urlFor(image && image[0])}
-                        width={250}
-                        height={250}
                         className='product__image'
                     />
                     <p className='product__name'>{name}</p>
-                    <p className='product__price'>${price}</p>
+                    <p className='product__price'>{price}</p>
                 </div>
             </Link>
-        </div>
+        ))}
+       </div>
     )
 }
 
