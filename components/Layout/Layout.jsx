@@ -14,8 +14,11 @@ const Layout = () => {
                 <NavBar />
             </header>
             <main className='main'>
-
+                Empty
             </main>
+            <Footer>
+                <Footer />
+            </Footer>
         </div>
     )
 }
