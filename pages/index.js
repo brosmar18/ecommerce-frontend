@@ -10,7 +10,7 @@ const Home = ({ products, bannerData }) => (
 
       <Product products={products}/>
 
-      <FooterBanner />
+      <FooterBanner footerBanner={bannerData && bannerData[0]}/>
     </div>
   );
 
