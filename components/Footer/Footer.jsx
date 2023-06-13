@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillFacebook, AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai';
+import { AiFillYoutube, AiFillFacebook, AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai';
 
 import styles from './Footer.module.scss';
 
@@ -9,6 +9,7 @@ const Footer = () => {
         <div className={styles['footer']}>
             <p>&copy; 2023 Furry Pal News All rights reserved</p>
             <p className={styles['footer__icons']}>
+                <AiFillYoutube />
                 <AiFillFacebook />
                 <AiFillInstagram />
                 <AiOutlineTwitter />
