@@ -21,7 +21,7 @@ const FooterBanner = ({ footerBanner: { discount, largeText1, largeText2, saleTi
                     <p>{desc}</p>
                 </div>
                 <Link href="#">
-                    <button className={styles['footer-banner__button']} type='button'>Button Text</button>
+                    <button className={styles['footer-banner__button']} type='button'>{buttonText}</button>
                 </Link>
                 <img
                     src='#'
