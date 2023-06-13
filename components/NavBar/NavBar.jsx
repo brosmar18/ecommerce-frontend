@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { AiOutlineShopping } from 'react-icons/ai'
 
+import styles from './NavBar.module.scss';
 
 const NavBar = () => {
     return (
