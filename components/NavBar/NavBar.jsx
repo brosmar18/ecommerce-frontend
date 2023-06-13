@@ -5,7 +5,11 @@ import { AiOutlineShopping } from 'react-icons/ai'
 
 const NavBar = () => {
     return (
-        <div>NavBar</div>
+        <div className='nav'>
+            <p className='nav__logo'>
+                <Link href="/">Furry Pal News</Link>
+            </p>
+        </div>
     )
 }
 
