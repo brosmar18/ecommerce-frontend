@@ -56,12 +56,22 @@ const Cart = () => {
                                         <button
                                             type='button'
                                             className={styles.remveItem}
-                                        ><TiDeleteOutline /></button>
+                                        >
+                                            <TiDeleteOutline />
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         ))}
                     </div>
+                    {cartItems.length >= 1 && (
+                        <div className={styles.cartBottom}>
+                            <div className={styles.total}>
+                                <h3>Subtotal:</h3>
+                                <h3>total price</h3>
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
         </>
