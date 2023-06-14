@@ -39,6 +39,14 @@ const ProductDetails = ({ products, product }) => {
                     <h4>Details: </h4>
                     <p>{details}</p>
                     <p className='product-details__price'>${price}</p>
+                    <div className='quanitity'>
+                        <h3>Quantity:</h3>
+                        <p className='quanity__desc'>
+                            <span className='minus' onClick={''}><AiOutlineMinus /></span>
+                            <span className='num'>0</span>
+                            <span className='plus' onClick={''}><AiOutlinePlus /></span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
