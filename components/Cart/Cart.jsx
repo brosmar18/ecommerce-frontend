@@ -21,6 +21,19 @@ const Cart = () => {
                     <span className={styles.heading}>Your Cart</span>
                     <span className={styles.cartNumItems}>({totalQuantities})</span>
                 </button>
+                {cartItems.length < 1 && (
+                    <div className={styles.emptyCart}>
+                        <AiOutlineShopping size={150} />
+                        <h3>Your shopping bag is empty</h3>
+                        <Link href="/">
+                            <button
+                                type='button'
+                                onClick={() => setShowCart(false)} className={styles.btn}>
+                                    Continue Shopping
+                            </button>
+                        </Link>
+                    </div>
+                )}
             </div>
         </div>
     )
