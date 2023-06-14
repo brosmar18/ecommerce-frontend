@@ -47,6 +47,10 @@ const ProductDetails = ({ products, product }) => {
                             <span className='plus' onClick={''}><AiOutlinePlus /></span>
                         </p>
                     </div>
+                    <div className='buttons'>
+                        <button type='button' className='add-to-cart'>Add to Cart</button>
+                        <button type='button' className='buy-now'>Buy Now</button>
+                    </div>
                 </div>
             </div>
         </div>
