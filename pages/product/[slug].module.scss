@@ -31,6 +31,14 @@
     }
 }
 
+.reviews {
+    color: #f02d34;
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
 .product-details__price {
     font-weight: 700;
     font-size: 26px;
