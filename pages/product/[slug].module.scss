@@ -41,6 +41,11 @@
     display: flex;
     gap: 5px;
     align-items: center;
+
+    p {
+        color: #324d67;
+        margin-top: 0;
+    }
 }
 
 .product-details__price {
