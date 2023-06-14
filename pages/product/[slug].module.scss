@@ -45,6 +45,11 @@
     align-items: center;
 }
 
+.quantity__desc {
+    border: 1px solid gray;
+    padding: 6px;
+}
+
 .product-details__buttons {
     display: flex;
     gap: 30px;
