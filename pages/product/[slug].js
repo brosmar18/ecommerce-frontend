@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import client, { urlFor } from '../../library/client';
 import { Product } from '../../components';
+import {useStateContext} from '../../context/StateContext';
 
 import styles from './[slug].module.scss';
 
