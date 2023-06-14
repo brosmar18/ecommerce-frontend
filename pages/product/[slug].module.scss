@@ -33,3 +33,13 @@
     height: 70px;
     cursor: pointer;
 }
+
+.selectedImage {
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 7.5px rgba(240, 45, 52, 0.4);
+    }
+}
