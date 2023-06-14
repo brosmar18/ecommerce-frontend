@@ -173,3 +173,15 @@
     gap: 15px;
     margin-top: 20px;
 }
+
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 15s linear infinite;
+    width: 180%;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
