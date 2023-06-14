@@ -161,3 +161,10 @@
     width: 100%;
     overflow-x: hidden;
 }
+
+.mayLikeProductsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}

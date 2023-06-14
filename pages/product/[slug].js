@@ -60,7 +60,7 @@ const ProductDetails = ({ products, product }) => {
             <div className={styles.mayLikeProductsWrapper}>
                 <h2 className={styles.mayLikeProductsWrapper__title}>You May also like</h2>
                 <div className={styles.marquee}>
-                    <div className={`${styles.maylikeProductsContainer} ${styles.track}`}>
+                    <div className={`${styles.mayLikeProductsContainer} ${styles.track}`}>
                         {products.map((item) => (
                             <Product key={item._id} product={item} />
                         ))}
