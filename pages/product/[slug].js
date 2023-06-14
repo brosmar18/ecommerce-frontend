@@ -7,25 +7,25 @@ import styles from './[slug].module.scss';
 
 const ProductDetails = ({ products, product }) => {
     const { image, name, details, price } = product;
-    // const [index, setIndex] = useState(0);
+    const [index, setIndex] = useState(0);
 
     return (
         <div>
-            <div className={styles.productDetails}>
+            <div className={styles.productDetailContainer}>
                 <div>
-                    <div className={styles.productDetailsImage}>
-                        <img src={urlFor(image && image[0])} />
+                    <div>
+                        <img src={urlFor(image && image[0])}className={styles.productDetailImage}/>
                     </div>
-                    {/* <div className='product-details__small-image'>
+                    <div className={styles.smallImagesContainer}>
                         {image?.map((item, i) => (
                             <img
                                 key={i}
                                 src={urlFor(item)}
-                                className={i === index ? 'small-image selected-image' : 'small-image'}
+                                className={`i == index ? ${styles.smallImage} ${styles.selectedImage} : ${styles.smallImage}`}
                                 onMouseEnter={() => setIndex(i)}
                             />
                         ))}
-                    </div> */}
+                    </div>
                 </div>
                 <div className={styles.productDetailsDesc}>
                     <h1>{name}</h1>
@@ -37,12 +37,12 @@ const ProductDetails = ({ products, product }) => {
                             <AiFillStar />
                             <AiOutlineStar />
                         </div>
-                        <p>(20)</p>
+                        <p className={styles.reviews__num}>(20)</p>
                     </div>
-                    <h4>Details: </h4>
-                    <p>{details}</p>
-                    <p className={styles.productDetailsPrice}>${price}</p>
-                    <div className={styles.productDetailsQuantity}>
+                    <h4 className={styles.productDetailContainer__details}>Details: </h4>
+                    <p className={styles.productDetailContainer__detailsRender}>{details}</p>
+                    <p className={styles.price}>${price}</p>
+                    <div className={styles.quantity}>
                         <h3>Quantity:</h3>
                         <p className={styles.quantityDesc}>
                             <span className={styles.minus} onClick={''}><AiOutlineMinus /></span>
@@ -50,17 +50,17 @@ const ProductDetails = ({ products, product }) => {
                             <span className={styles.plus} onClick={''}><AiOutlinePlus /></span>
                         </p>
                     </div>
-                    <div className={styles.productDetailsButtons}>
+                    <div className={styles.buttons}>
                         <button type='button' className={styles.addToCart}>Add to Cart</button>
                         <button type='button' className={styles.buyNow}>Buy Now</button>
                     </div>
                 </div>
             </div>
 
-            <div className={styles.recommendedProducts}>
-                <h2>You May also like</h2>
+            <div className={styles.mayLikeProductsWrapper}>
+                <h2 className={styles.mayLikeProductsWrapper__title}>You May also like</h2>
                 <div className={styles.marquee}>
-                    <div className={`${styles.recommendedProductsContainer} ${styles.track}`}>
+                    <div className={`${styles.mayLikeProductsContainer} ${styles.track}`}>
                         {products.map((item) => (
                             <Product key={item._id} product={item} />
                         ))}
