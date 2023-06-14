@@ -7,10 +7,6 @@ import styles from './Product.module.scss';
 const Product = ({ products }) => {
     return (
         <>
-            <div className={styles['products-heading']}>
-                <h2 className={styles['products-heading__title']}>Best Seller Products</h2>
-                <p className={styles['products-heading__desc']}>Description of products or selling statement</p>
-            </div>
             <div className={styles['products-container']}>
                 {products?.map(({ image, name, slug, price, _id }) => (
                     <Link key={_id} href={`/product/${slug.current}`}>
