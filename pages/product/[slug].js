@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import client, { urlFor } from '../../library/client';
+import { Product } from '../../components';
 
 import styles from './[slug].module.scss';
 
 const ProductDetails = ({ products, product }) => {
     const { image, name, details, price } = product;
-    const [index, setIndex] = useState(0);
+    // const [index, setIndex] = useState(0);
 
     return (
         <div>
@@ -15,7 +16,7 @@ const ProductDetails = ({ products, product }) => {
                     <div className={styles['product-details__image']}>
                         <img src={urlFor(image && image[0])} />
                     </div>
-                    <div className='product-details__small-image'>
+                    {/* <div className='product-details__small-image'>
                         {image?.map((item, i) => (
                             <img
                                 key={i}
@@ -24,7 +25,7 @@ const ProductDetails = ({ products, product }) => {
                                 onMouseEnter={() => setIndex(i)}
                             />
                         ))}
-                    </div>
+                    </div> */}
                 </div>
                 <div className={styles['product-details__desc']}>
                     <h1>{name}</h1>
@@ -61,7 +62,7 @@ const ProductDetails = ({ products, product }) => {
                 <div className='marquee'>
                     <div className='recommended-products__container track'>
                         {products.map((item) => (
-                            <Product key=(item._id) product={item} />
+                            <Product key={item._id} product={item} />
                         ))}
                     </div>
                 </div>
