@@ -15,7 +15,7 @@ const ProductDetails = ({ products, product }) => {
                     <div className={styles['product-details__image']}>
                         <img src={urlFor(image && image[0])} />
                     </div>
-                    {/* <div className='product-details__small-image'>
+                    <div className='product-details__small-image'>
                         {image?.map((item, i) => (
                             <img
                                 key={i}
@@ -24,7 +24,7 @@ const ProductDetails = ({ products, product }) => {
                                 onMouseEnter={() => setIndex(i)}
                             />
                         ))}
-                    </div> */}
+                    </div>
                 </div>
                 <div className={styles['product-details__desc']}>
                     <h1>{name}</h1>

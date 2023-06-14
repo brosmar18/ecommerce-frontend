@@ -5,3 +5,17 @@
     margin-top: 60px;
     color: #324d67;
 }
+
+.product-details__small-image {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.small-image {
+    border-radius: 8px;
+    background-color: #ebebeb;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
