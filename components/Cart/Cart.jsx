@@ -53,6 +53,10 @@ const Cart = () => {
                                                 <span className={styles.plus}><AiOutlinePlus /></span>
                                             </p>
                                         </div>
+                                        <button
+                                            type='button'
+                                            className={styles.remveItem}
+                                        ><TiDeleteOutline /></button>
                                     </div>
                                 </div>
                             </div>
