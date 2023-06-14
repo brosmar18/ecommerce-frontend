@@ -12,7 +12,7 @@ export const StateContext = ({ children }) => {
     const [qty, setQty] = useState(1);
 
     const incQty = () => {
-
+        setQty((prevQty) => prevQty + 1);
     }
 
     return (
