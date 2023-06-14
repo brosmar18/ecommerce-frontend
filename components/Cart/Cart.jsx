@@ -38,7 +38,7 @@ const Cart = () => {
                 <div className={styles.productContainer}>
                     {cartItems.length >= 1 && cartItems.map((item, index) => (
                         <div className={styles.product} key={item._id}>
-                            
+                            <img src={urlFor(item?.image[0])} className={styles.cartProductImage} />
                         </div>
                     ))}
                 </div>
