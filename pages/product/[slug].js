@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import client, { urlFor } from '../../library/client';
 
+import styles from './[slug].module.scss';
+
 const ProductDetails = ({ products, product }) => {
     const { image, name, details, price } = product;
     const [index, setIndex] = useState(0);
