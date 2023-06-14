@@ -2,18 +2,20 @@ import React, {useState} from 'react';
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import client, { urlFor } from '../../library/client';
 
+import styles from './[slug].module.scss';
+
 const ProductDetails = ({ products, product }) => {
     const { image, name, details, price } = product;
     const [index, setIndex] = useState(0);
 
     return (
         <div>
-            <div className='product-details'>
+            <div className={styles['product-details']}>
                 <div>
-                    <div className='product-details__image'>
+                    <div className={styles['product-details__image']}>
                         <img src={urlFor(image && image[0])} />
                     </div>
-                    {/* <div className='product-details__small-image'>
+                    <div className='product-details__small-image'>
                         {image?.map((item, i) => (
                             <img
                                 key={i}
@@ -22,11 +24,11 @@ const ProductDetails = ({ products, product }) => {
                                 onMouseEnter={() => setIndex(i)}
                             />
                         ))}
-                    </div> */}
+                    </div>
                 </div>
-                <div className='product-details__desc'>
+                <div className={styles['product-details__desc']}>
                     <h1>{name}</h1>
-                    <div className='reviews'>
+                    <div className={styles['reviews']}>
                         <div>
                             <AiFillStar />
                             <AiFillStar />
@@ -38,18 +40,18 @@ const ProductDetails = ({ products, product }) => {
                     </div>
                     <h4>Details: </h4>
                     <p>{details}</p>
-                    <p className='product-details__price'>${price}</p>
-                    <div className='quanitity'>
+                    <p className={styles['product-details__price']}>${price}</p>
+                    <div className={styles['product-details__quantity']}>
                         <h3>Quantity:</h3>
-                        <p className='quanity__desc'>
-                            <span className='minus' onClick={''}><AiOutlineMinus /></span>
-                            <span className='num'>0</span>
-                            <span className='plus' onClick={''}><AiOutlinePlus /></span>
+                        <p className={styles['quantity__desc']}>
+                            <span className={styles['minus']} onClick={''}><AiOutlineMinus /></span>
+                            <span className={styles['num']}>0</span>
+                            <span className={styles['plus']} onClick={''}><AiOutlinePlus /></span>
                         </p>
                     </div>
-                    <div className='buttons'>
-                        <button type='button' className='add-to-cart'>Add to Cart</button>
-                        <button type='button' className='buy-now'>Buy Now</button>
+                    <div className={styles['product-details__buttons']}>
+                        <button type='button' className={styles['add-to-cart']}>Add to Cart</button>
+                        <button type='button' className={styles['buy-now']}>Buy Now</button>
                     </div>
                 </div>
             </div>
