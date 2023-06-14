@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import client, { urlFor } from '../../library/client';
 import { Product } from '../../components';
@@ -11,9 +11,9 @@ const ProductDetails = ({ products, product }) => {
 
     return (
         <div>
-            <div className={styles['product-details']}>
+            <div className={styles.productDetails}>
                 <div>
-                    <div className={styles['product-details__image']}>
+                    <div className={styles.productDetailsImage}>
                         <img src={urlFor(image && image[0])} />
                     </div>
                     {/* <div className='product-details__small-image'>
@@ -27,9 +27,9 @@ const ProductDetails = ({ products, product }) => {
                         ))}
                     </div> */}
                 </div>
-                <div className={styles['product-details__desc']}>
+                <div className={styles.productDetailsDesc}>
                     <h1>{name}</h1>
-                    <div className={styles['reviews']}>
+                    <div className={styles.reviews}>
                         <div>
                             <AiFillStar />
                             <AiFillStar />
@@ -41,26 +41,26 @@ const ProductDetails = ({ products, product }) => {
                     </div>
                     <h4>Details: </h4>
                     <p>{details}</p>
-                    <p className={styles['product-details__price']}>${price}</p>
-                    <div className={styles['product-details__quantity']}>
+                    <p className={styles.productDetailsPrice}>${price}</p>
+                    <div className={styles.productDetailsQuantity}>
                         <h3>Quantity:</h3>
-                        <p className={styles['quantity__desc']}>
-                            <span className={styles['minus']} onClick={''}><AiOutlineMinus /></span>
-                            <span className={styles['num']}>0</span>
-                            <span className={styles['plus']} onClick={''}><AiOutlinePlus /></span>
+                        <p className={styles.quantityDesc}>
+                            <span className={styles.minus} onClick={''}><AiOutlineMinus /></span>
+                            <span className={styles.num}>0</span>
+                            <span className={styles.plus} onClick={''}><AiOutlinePlus /></span>
                         </p>
                     </div>
-                    <div className={styles['product-details__buttons']}>
-                        <button type='button' className={styles['add-to-cart']}>Add to Cart</button>
-                        <button type='button' className={styles['buy-now']}>Buy Now</button>
+                    <div className={styles.productDetailsButtons}>
+                        <button type='button' className={styles.addToCart}>Add to Cart</button>
+                        <button type='button' className={styles.buyNow}>Buy Now</button>
                     </div>
                 </div>
             </div>
 
-            <div className={styles['recommended-products']}>
+            <div className={styles.recommendedProducts}>
                 <h2>You May also like</h2>
-                <div className={styles['marquee']}>
-                    <div className={styles['recommended-products__container track']}>
+                <div className={styles.marquee}>
+                    <div className={styles.recommendedProductsContainerTrack}>
                         {products.map((item) => (
                             <Product key={item._id} product={item} />
                         ))}
@@ -103,7 +103,8 @@ export const getStaticProps = async ({ params: { slug } }) => {
     console.log(product);
 
     return {
-        props: { products, product }
+        props: {
+            products, product }
     }
 }
 
