@@ -49,7 +49,7 @@ const ProductDetails = ({ products, product }) => {
                             <span className={styles['plus']} onClick={''}><AiOutlinePlus /></span>
                         </p>
                     </div>
-                    <div className={styles['buttons']}>
+                    <div className={styles['product-details__buttons']}>
                         <button type='button' className={styles['add-to-cart']}>Add to Cart</button>
                         <button type='button' className={styles['buy-now']}>Buy Now</button>
                     </div>
