@@ -14,42 +14,53 @@ const Cart = () => {
 
 
     return (
-        <div className={styles.cartWrapper} ref={cartRef}>
-            <div className={styles.cartContainer}>
-                <button type='button' className={styles.cartHeading} onClick={() => setShowCart(false)}>
-                    <AiOutlineLeft />
-                    <span className={styles.heading}>Your Cart</span>
-                    <span className={styles.cartNumItems}>({totalQuantities})</span>
-                </button>
-                {cartItems.length < 1 && (
-                    <div className={styles.emptyCart}>
-                        <AiOutlineShopping size={150} />
-                        <h3>Your shopping bag is empty</h3>
-                        <Link href="/">
-                            <button
-                                type='button'
-                                onClick={() => setShowCart(false)} className={styles.btn}>
+        <>
+            <div className={styles.cartWrapper} ref={cartRef}>
+                <div className={styles.cartContainer}>
+                    <button type='button' className={styles.cartHeading} onClick={() => setShowCart(false)}>
+                        <AiOutlineLeft />
+                        <span className={styles.heading}>Your Cart</span>
+                        <span className={styles.cartNumItems}>({totalQuantities})</span>
+                    </button>
+                    {cartItems.length < 1 && (
+                        <div className={styles.emptyCart}>
+                            <AiOutlineShopping size={150} />
+                            <h3>Your shopping bag is empty</h3>
+                            <Link href="/">
+                                <button
+                                    type='button'
+                                    onClick={() => setShowCart(false)} className={styles.btn}>
                                     Continue Shopping
-                            </button>
-                        </Link>
-                    </div>
-                )}
+                                </button>
+                            </Link>
+                        </div>
+                    )}
 
-                <div className={styles.productContainer}>
-                    {cartItems.length >= 1 && cartItems.map((item, index) => (
-                        <div className={styles.product} key={item._id}>
-                            <img src={urlFor(item?.image[0])} className={styles.cartProductImage} />
-                            <div className={styles.itemDesc}>
-                                <div className={`${styles.flex} ${styles.top}`}>
-                                    <h5>{item.name}</h5>
-                                    <h4>${item.price}</h4>
+                    <div className={styles.productContainer}>
+                        {cartItems.length >= 1 && cartItems.map((item, index) => (
+                            <div className={styles.product} key={item._id}>
+                                <img src={urlFor(item?.image[0])} className={styles.cartProductImage} />
+                                <div className={styles.itemDesc}>
+                                    <div className={`${styles.flex} ${styles.top}`}>
+                                        <h5>{item.name}</h5>
+                                        <h4>${item.price}</h4>
+                                    </div>
+                                    <div className={`${styles.flex} ${styles.bottom}`}>
+                                        <div>
+                                            <p className={styles.quantityDesc}>
+                                                <span className={styles.minus}> <AiOutlineMinus /></span>
+                                                <span className={styles.num}>{item.quantity}</span>
+                                                <span className={styles.plus}><AiOutlinePlus /></span>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
