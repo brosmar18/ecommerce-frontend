@@ -16,3 +16,28 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.products-heading {
+  text-align: center;
+  margin: 40px 0;
+  color: #324d67;
+}
+
+.products-heading__title {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.products-heading__desc {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  width: 100%;
+}

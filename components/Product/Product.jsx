@@ -4,16 +4,11 @@ import { urlFor } from '../../library/client';
 
 import styles from './Product.module.scss';
 
-const Product = ({ products }) => {
+const Product = ({ product: { image, name, slug, price, _id} }) => {
     return (
         <>
-            <div className={styles['products-heading']}>
-                <h2 className={styles['products-heading__title']}>Best Seller Products</h2>
-                <p className={styles['products-heading__desc']}>Description of products or selling statement</p>
-            </div>
-            <div className={styles['products-container']}>
-                {products?.map(({ image, name, slug, price, _id }) => (
-                    <Link key={_id} href={`/product/${slug.current}`}>
+            <div>
+                <Link key={_id} href={`/product/${slug.current}`}>
                         <div className={styles['product']}>
                             <img
                                 src={urlFor(image && image[0])}
@@ -23,7 +18,6 @@ const Product = ({ products }) => {
                             <p className={styles['product__price']}>${price}</p>
                         </div>
                     </Link>
-                ))}
             </div>
         </>
     )
