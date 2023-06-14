@@ -7,7 +7,7 @@ import { useStateContext } from '../../context/StateContext';
 import styles from './NavBar.module.scss';
 
 const NavBar = () => {
-    const { showCart, setShowCart } = useStateContext();
+    const { showCart, setShowCart, totalQuantities } = useStateContext();
     return (
         <div className={styles['nav']}>
             <p className={styles['nav__logo']}>
@@ -15,7 +15,7 @@ const NavBar = () => {
             </p>
             <button type='button' className={styles['nav__cart-icon']}>
                 <AiOutlineShopping />
-                <span className={styles['nav__item-qty']}>1</span>
+                <span className={styles['nav__item-qty']}>{totalQuantities}</span>
             </button>
 
             <Cart />
