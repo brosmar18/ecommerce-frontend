@@ -41,7 +41,7 @@ const ProductDetails = ({ products, product }) => {
                     <h4>Details: </h4>
                     <p>{details}</p>
                     <p className={styles['product-details__price']}>${price}</p>
-                    <div className={styles['quanitity']}>
+                    <div className={styles['product-details__quantity']}>
                         <h3>Quantity:</h3>
                         <p className={styles['quanity__desc']}>
                             <span className={styles['minus']} onClick={''}><AiOutlineMinus /></span>
