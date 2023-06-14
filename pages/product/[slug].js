@@ -47,7 +47,7 @@ const ProductDetails = ({ products, product }) => {
                     <div className={styles.quantity}>
                         <h3>Quantity:</h3>
                         <p className={styles.quantityDesc}>
-                            <span className={styles.minus} onClick={''}><AiOutlineMinus /></span>
+                            <span className={styles.minus} onClick={decQty}><AiOutlineMinus /></span>
                             <span className={styles.num}>0</span>
                             <span className={styles.plus} onClick={''}><AiOutlinePlus /></span>
                         </p>
