@@ -8,6 +8,10 @@ import { useStateContext } from '../../context/StateContext';
 import { urlFor } from '../../library/client';
 
 const Cart = () => {
+    const cartRef = useRef();
+    const { totalPrice, totalQuantities, cartItems, setShowCart } = useStateContext();
+
+    
     return (
         <>Cart</>
     )
