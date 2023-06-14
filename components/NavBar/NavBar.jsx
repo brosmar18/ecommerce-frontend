@@ -13,12 +13,12 @@ const NavBar = () => {
             <p className={styles['nav__logo']}>
                 <Link href="/">Furry Pal News</Link>
             </p>
-            <button type='button' className={styles['nav__cart-icon']}>
+            <button type='button' className={styles['nav__cart-icon']} onClick={() => setShowCart(true)}>
                 <AiOutlineShopping />
                 <span className={styles['nav__item-qty']}>{totalQuantities}</span>
             </button>
 
-            <Cart />
+            {showCart && <Cart />}
         </div>
     )
 }
