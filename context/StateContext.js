@@ -15,6 +15,10 @@ export const StateContext = ({ children }) => {
         setQty((prevQty) => prevQty + 1);
     }
 
+    const decQty = () => {
+        
+    }
+
     return (
         <Context.Provider
             value={{
