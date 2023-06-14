@@ -154,3 +154,10 @@
     color: #324d67;
     font-size: 28px;
 }
+
+.marquee {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    overflow-x: hidden;
+}
