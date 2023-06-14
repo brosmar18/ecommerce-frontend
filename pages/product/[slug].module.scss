@@ -46,8 +46,21 @@
 
 .reviews {
     color: #f02d34;
-    margin-top: 10px;
     display: flex;
     gap: 5px;
     align-items: center;
+    margin-top: 10px;
 }
+
+.reviews__num {
+    color: #324d67;
+}
+
+.productDetailContainer__details {
+    margin-top: 10px;
+}
+
+.productDetailContainer__detailsRender {
+    margin-top: 10px;
+}
+

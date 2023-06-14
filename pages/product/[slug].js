@@ -37,10 +37,10 @@ const ProductDetails = ({ products, product }) => {
                             <AiFillStar />
                             <AiOutlineStar />
                         </div>
-                        <p>(20)</p>
+                        <p className={styles.reviews__num}>(20)</p>
                     </div>
-                    <h4>Details: </h4>
-                    <p>{details}</p>
+                    <h4 className={styles.productDetailContainer__details}>Details: </h4>
+                    <p className={styles.productDetailContainer__detailsRender}>{details}</p>
                     <p className={styles.price}>${price}</p>
                     <div className={styles.quantity}>
                         <h3>Quantity:</h3>
