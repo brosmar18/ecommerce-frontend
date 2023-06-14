@@ -1,3 +1,8 @@
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%);}
+}
+
 .productDetails {
     display: flex;
     gap: 40px;
@@ -150,4 +155,16 @@
     height: 400px;
     width: 100%;
     overflow-x: hidden;
+}
+
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 15s linear infinite;
+    width: 180%;
+
+    &:hover {
+        animation-play-state: paused;
+    }
 }
