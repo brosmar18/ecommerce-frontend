@@ -34,6 +34,14 @@ const Cart = () => {
                         </Link>
                     </div>
                 )}
+
+                <div className={styles.productContainer}>
+                    {cartItems.length >= 1 && cartItems.map((item, index) => (
+                        <div className={styles.product} key={item._id}>
+                            
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     )
