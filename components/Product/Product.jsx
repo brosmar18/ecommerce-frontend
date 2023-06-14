@@ -7,7 +7,7 @@ import styles from './Product.module.scss';
 const Product = ({ product: { image, name, slug, price, _id} }) => {
     return (
         <>
-            <div className={styles['products-container']}>
+            <div>
                 <Link key={_id} href={`/product/${slug.current}`}>
                         <div className={styles['product']}>
                             <img

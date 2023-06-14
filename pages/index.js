@@ -11,7 +11,9 @@ const Home = ({ products, bannerData }) => (
       <h2 className='products-heading__title'>Best Seller Products</h2>
       <p className='products-heading__desc'>Description of products or selling statement</p>
     </div>
-      <Product products={products}/>
+      <div className='products-container'>
+        {products?.map((product) => <Product key={product._id} product={product} />)}
+      </div>
 
       <FooterBanner footerBanner={bannerData && bannerData[0]}/>
     </div>
