@@ -1,9 +1,10 @@
-import React from 'react';
-
+import React, {useState} from 'react';
+import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import client, { urlFor } from '../../library/client';
 
 const ProductDetails = ({ products, product }) => {
     const { image, name, details, price } = product;
+    const [index, setIndex] = useState(0);
 
     return (
         <div>
@@ -11,6 +12,28 @@ const ProductDetails = ({ products, product }) => {
                 <div>
                     <div className='product-details__image'>
                         <img src={urlFor(image && image[0])} />
+                    </div>
+                    {/* <div className='product-details__small-image'>
+                        {image?.map((item, i) => (
+                            <img
+                                key={i}
+                                src={urlFor(item)}
+                                className={i === index ? 'small-image selected-image' : 'small-image'}
+                                onMouseEnter={() => setIndex(i)}
+                            />
+                        ))}
+                    </div> */}
+                </div>
+                <div className='product-details__desc'>
+                    <h1>{name}</h1>
+                    <div className='reviews'>
+                        <div>
+                            <AiFillStar />
+                            <AiFillStar />
+                            <AiFillStar />
+                            <AiFillStar />
+                            <AiOutlineStar />
+                        </div>
                     </div>
                 </div>
             </div>
