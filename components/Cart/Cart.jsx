@@ -55,7 +55,7 @@ const Cart = () => {
                                         </div>
                                         <button
                                             type='button'
-                                            className={styles.remveItem}
+                                            className={styles.removeItem}
                                         >
                                             <TiDeleteOutline />
                                         </button>
@@ -65,7 +65,7 @@ const Cart = () => {
                         ))}
                     </div>
                     {cartItems.length >= 1 && (
-                        <div className={styles.cartBottom}>
+                        <div className={styles.cartBotton}>
                             <div className={styles.total}>
                                 <h3>Subtotal:</h3>
                                 <h3>${totalPrice}</h3>
