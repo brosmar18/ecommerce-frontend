@@ -55,7 +55,7 @@ const Cart = () => {
                                         </div>
                                         <button
                                             type='button'
-                                            className={styles.remveItem}
+                                            className={styles.removeItem}
                                         >
                                             <TiDeleteOutline />
                                         </button>
