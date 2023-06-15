@@ -10,7 +10,7 @@ import styles from './Cart.module.scss';
 
 const Cart = () => {
     const cartRef = useRef();
-    const { totalPrice, totalQuantities, cartItems, setShowCart } = useStateContext();
+    const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuantity } = useStateContext();
 
 
     return (
@@ -48,9 +48,9 @@ const Cart = () => {
                                     <div className={`${styles.flex} ${styles.bottom}`}>
                                         <div>
                                             <p className={styles.quantityDesc}>
-                                                <span className={styles.minus}> <AiOutlineMinus /></span>
+                                                <span className={styles.minus} onClick={() => toggleCartItemQuantity(item._id, 'dec') }> <AiOutlineMinus /></span>
                                                 <span className={styles.num}>{item.quantity}</span>
-                                                <span className={styles.plus}><AiOutlinePlus /></span>
+                                                <span className={styles.plus} onClick={() => toggleCartItemQuantity(item._id, 'inc') }><AiOutlinePlus /></span>
                                             </p>
                                         </div>
                                         <button
